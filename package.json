@@ -1,0 +1,35 @@
+{
+  "name": "simple-web-page",
+  "version": "1.0.0",
+  "description": "A simple web page using Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"  // You can change this if you're using a different test framework
+  },
+  "dependencies": {
+    "express": "^4.17.1",        // Web framework for building web applications
+    "cors": "^2.8.5",            // Middleware for enabling CORS
+    "body-parser": "^1.19.0",    // Middleware for parsing request bodies
+    "dotenv": "^10.0.0"          // For loading environment variables from a .env file
+  },
+  "devDependencies": {
+    "jest": "^27.0.6",           // Testing framework
+    "nodemon": "^2.0.15"         // Tool for automatically restarting the server on file changes
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imamandeep/abc.git"
+  },
+  "keywords": [
+    "node",
+    "web",
+    "express"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imamandeep/abc/issues"
+  },
+  "homepage": "https://github.com/imamandeep/abc#readme"
+}
