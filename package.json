@@ -13,6 +13,10 @@
     "body-parser": "^1.19.0",
     "dotenv": "^10.0.0"
   },
+  "jest": {
+  "testMatch": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"]
+  }
+
   "devDependencies": {
     "jest": "^27.0.6",
     "nodemon": "^2.0.15"
