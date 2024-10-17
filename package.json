@@ -5,17 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest"  // You can change this if you're using a different test framework
+    "test": "jest"
   },
   "dependencies": {
-    "express": "^4.17.1",        // Web framework for building web applications
-    "cors": "^2.8.5",            // Middleware for enabling CORS
-    "body-parser": "^1.19.0",    // Middleware for parsing request bodies
-    "dotenv": "^10.0.0"          // For loading environment variables from a .env file
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0"
   },
   "devDependencies": {
-    "jest": "^27.0.6",           // Testing framework
-    "nodemon": "^2.0.15"         // Tool for automatically restarting the server on file changes
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.15"
   },
   "repository": {
     "type": "git",
