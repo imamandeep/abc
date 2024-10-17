@@ -1,22 +1,21 @@
 {
-  "name": "your-app-name",
+  "name": "simple-web-page",
   "version": "1.0.0",
-  "description": "A brief description of your application",
+  "description": "A simple web page using Node.js",
   "main": "index.js",
   "scripts": {
-    "build:staging": "echo 'Building for staging...'; webpack --config webpack.staging.js", // Replace with your actual build command
-    "test": "jest", // Replace with your test runner, e.g., jest, mocha, etc.
-    "start": "node index.js" // Command to start your app
+    "start": "node index.js",
+    "test": "jest"  // You can change this if you're using a different test framework
   },
   "dependencies": {
-    // Add your runtime dependencies here
-    "express": "^4.17.1"
+    "express": "^4.17.1",        // Web framework for building web applications
+    "cors": "^2.8.5",            // Middleware for enabling CORS
+    "body-parser": "^1.19.0",    // Middleware for parsing request bodies
+    "dotenv": "^10.0.0"          // For loading environment variables from a .env file
   },
   "devDependencies": {
-    // Add your development dependencies here
-    "jest": "^27.0.6",
-    "webpack": "^5.58.2",
-    "webpack-cli": "^4.9.1"
+    "jest": "^27.0.6",           // Testing framework
+    "nodemon": "^2.0.15"         // Tool for automatically restarting the server on file changes
   },
   "repository": {
     "type": "git",
@@ -24,7 +23,8 @@
   },
   "keywords": [
     "node",
-    "javascript"
+    "web",
+    "express"
   ],
   "author": "Your Name",
   "license": "ISC",
