@@ -1,61 +1,11 @@
-name: Build and Deploy to IIS
-
-on:
-  pull_request:
-    types: [closed]
-
+name: first wf
+on: workflow_dispatch
 jobs:
-  build:
-    if: github.event.pull_request.merged == true
-    runs-on: ubuntu-latest
-
+  first-job:
+    runs-on:ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
-
-      - name: Set Up .NET 
-        run: echo "Setting up .NET environment..."
-
-      - name: Build Project
-        run: echo "Building the project..."
-
-      - name: Publish Project
-        run: echo "Publishing the project to ./artifact..."
-
-      - name: Upload Artifact
-        run: echo "Uploading artifact from ./artifact..."
-
-  test:
-    runs-on: ubuntu-latest
-    needs: build  # Ensure this job runs after the build job
-
-    steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v4
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-
-    - name: npm install
-      run: npm install
-
-    - name: Run Tests
-      run: npm test
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download Artifact
-        run: echo "Downloading artifact..."
-
-      - name: Deploy to IIS
-        env:
-          IIS_SERVER: YOUR_SERVER_IP_OR_HOSTNAME
-          IIS_USER: YOUR_SSH_USERNAME
-        run: |
-          echo "Setting up SSH key..."
-          echo "Using SCP to transfer files to IIS server at $IIS_SERVER..."
-          echo "Deployment completed!"
+      - name: print greetings
+        run: echo" hello world"
+      - name: print goodbye
+        run: echo" done.. bye"
+      
