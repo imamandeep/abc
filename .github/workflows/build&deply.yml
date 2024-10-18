@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
 
-      - name: Set Up .NET (or your specific environment)
+      - name: Set Up .NET 
         run: echo "Setting up .NET environment..."
 
       - name: Build Project
